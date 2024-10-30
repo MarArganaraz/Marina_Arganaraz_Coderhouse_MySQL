@@ -80,7 +80,6 @@ Detallo a continuación cada tabla conformada por su PK, FK y además una breve 
    - ✔ Hora  
    - ✔ ID_Producto (FK)  
    - ✔ ID_tipo (FK)  
-   - ✔ ID_Metodo (FK)  
    - ✔ ID_Dis (FK)  
 
 9. <span style="color: pink;"><u>Ventas</u></span>: Esta tabla registra las ventas realizadas, incluyendo la cantidad vendida y la información relevante sobre el producto y la transacción.  
@@ -88,6 +87,5 @@ Detallo a continuación cada tabla conformada por su PK, FK y además una breve 
    - ✔ *ID_Ventas* (PK)  
    - ✔ ID_Producto (FK)  
    - ✔ ID_Factura (FK)  
-   - ✔ Cantidad  
-   - ✔ Nombre_Dis  
+   - ✔ Cantidad 
    - ✔ ID_Metodo (FK)
