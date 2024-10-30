@@ -89,3 +89,8 @@ Detallo a continuación cada tabla conformada por su PK, FK y además una breve 
    - ✔ ID_Factura (FK)  
    - ✔ Cantidad 
    - ✔ ID_Metodo (FK)
+
+
+# <u>LISTADO DE COLUMNA DE CADA TABLA</u>  
+
+A continuación, se hará mención de las columnas que posee cada tabla junto con su tipo de campo y clave:
