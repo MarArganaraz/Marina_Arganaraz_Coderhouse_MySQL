@@ -242,3 +242,53 @@ A continuación, se hará mención de las columnas que posee cada tabla junto co
 </table>
 
 
+<table>
+  <tr>
+    <th rowspan="3">MARCA</th>
+    <th>Campo</th>
+    <th>Tipo de Campo</th>
+    <th>Tipo de Clave</th>
+  </tr>
+  <tr>
+    <td>ID_Marca</td>
+    <td>INT / NOT NULL / AUTO_INCREMENT</td>
+    <td>PK</td>
+  </tr>
+  <tr>
+    <td>Nombre_Marca</td>
+    <td>VARCHAR (100)</td>
+    <td>-</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <th rowspan="5">CATEGORIA</th>
+    <th>Campo</th>
+    <th>Tipo de Campo</th>
+    <th>Tipo de Clave</th>
+  </tr>
+  <tr>
+    <td>ID_Categoria</td>
+    <td>INT / NOT NULL / AUTO_INCREMENT</td>
+    <td>PK</td>
+  </tr>
+  <tr>
+    <td>Categoría</td>
+    <td>VARCHAR (50)</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Abreviatura</td>
+    <td>VARCHAR (10)</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>ID_Sub</td>
+    <td>INT / NOT NULL</td>
+    <td>FK</td>
+  </tr>
+</table>
+
+
