@@ -24,3 +24,70 @@ El análisis está dirigido principalmente a:
 # _Diagrama Entidad Relacion Lucidchart_
 
 ![DER](DER_Merx_Lucidchart.PNG)
+
+
+# <u>LISTADO DE TABLAS</u>
+
+Detallo a continuación cada tabla conformada por su PK, FK y además una breve reseña de cada una.
+
+1. <span style="color: pink;"><u>Producto</u></span>: Representa los productos disponibles para la venta. Contiene información detallada sobre cada producto.  
+   *Atributos:*  
+   - ✔ *ID_Producto* (PK)  
+   - ✔ Producto  
+   - ✔ Producto completo  
+   - ✔ Etiqueta  
+   - ✔ ID_categoria (FK)  
+   - ✔ ID_marca (FK)  
+   - ✔ Precio  
+   - ✔ Costo  
+
+2. <span style="color: pink;"><u>Marcas</u></span>: Esta tabla contiene información sobre la marca de los productos.  
+   *Atributos:*  
+   - ✔ *ID_marca* (PK)  
+   - ✔ Nombre_Marca  
+
+3. <span style="color: pink;"><u>Categoría</u></span>: Agrupa los productos en categorías generales.  
+   *Atributos:*  
+   - ✔ *ID_Categoria* (PK)  
+   - ✔ Categoría  
+   - ✔ Abreviatura  
+   - ✔ ID_Sub (FK)  
+
+4. <span style="color: pink;"><u>Subcategoría</u></span>: Agrupa los productos en categorías específicas.  
+   *Atributos:*  
+   - ✔ *ID_Sub* (PK)  
+   - ✔ Subcategoría  
+
+5. <span style="color: pink;"><u>Tipo de compra</u></span>: Detalla si la compra fue realizada de manera física en el supermercado o en línea desde la página web.  
+   *Atributos:*  
+   - ✔ *ID_tipo* (PK)  
+   - ✔ Tipo  
+
+6. <span style="color: pink;"><u>Método de pago</u></span>: Indica las metodologías que utilizó el cliente para realizar sus compras (Transferencia, Débito, Crédito, Efectivo, QR).  
+   *Atributos:*  
+   - ✔ *ID_Metodo* (PK)  
+   - ✔ Metodo_Pago  
+
+7. <span style="color: pink;"><u>Dispositivos</u></span>: Indica los dispositivos utilizados para ejecutar el pago de cada compra (PC, Tablet, Celular).  
+   *Atributos:*  
+   - ✔ *ID_Dis* (PK)  
+   - ✔ Nombre_Dis  
+
+8. <span style="color: pink;"><u>Factura</u></span>: Registra la información de las facturas emitidas, incluyendo fecha y hora de cada transacción.  
+   *Atributos:*  
+   - ✔ *ID_Factura* (PK)  
+   - ✔ Fecha  
+   - ✔ Hora  
+   - ✔ ID_Producto (FK)  
+   - ✔ ID_tipo (FK)  
+   - ✔ ID_Metodo (FK)  
+   - ✔ ID_Dis (FK)  
+
+9. <span style="color: pink;"><u>Ventas</u></span>: Esta tabla registra las ventas realizadas, incluyendo la cantidad vendida y la información relevante sobre el producto y la transacción.  
+   *Atributos:*  
+   - ✔ *ID_Ventas* (PK)  
+   - ✔ ID_Producto (FK)  
+   - ✔ ID_Factura (FK)  
+   - ✔ Cantidad  
+   - ✔ Nombre_Dis  
+   - ✔ ID_Metodo (FK)
