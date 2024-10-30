@@ -330,3 +330,23 @@ A continuación, se hará mención de las columnas que posee cada tabla junto co
     <td>-</td>
   </tr>
 </table>
+
+
+<table>
+  <tr>
+    <th rowspan="3">SUBCATEGORIA</th>
+    <th>Campo</th>
+    <th>Tipo de Campo</th>
+    <th>Tipo de Clave</th>
+  </tr>
+  <tr>
+    <td>ID_Sub</td>
+    <td>INT / NOT NULL / AUTO_INCREMENT</td>
+    <td>PK</td>
+  </tr>
+  <tr>
+    <td>Subcategoría</td>
+    <td>VARCHAR (150)</td>
+    <td>-</td>
+  </tr>
+</table>
