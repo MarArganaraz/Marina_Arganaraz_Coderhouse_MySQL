@@ -21,4 +21,4 @@ El análisis está dirigido principalmente a:
 - *Estratégico*: En el largo plazo, el análisis proporciona una visión integral de las tendencias del mercado y los cambios en los hábitos de consumo, permitiendo a los gerentes planificar a futuro, adaptar las estrategias de negocio y mejorar la competitividad del supermercado en un entorno en constante cambio.
 
 
-### _DER _
+# DER 
