@@ -344,9 +344,3 @@ A continuación, se hará mención de las columnas que posee cada tabla junto co
     <td>-</td>
   </tr>
 </table>
-  <tr>
-    <td>Subcategoría</td>
-    <td>VARCHAR (150)</td>
-    <td>-</td>
-  </tr>
-</table>
