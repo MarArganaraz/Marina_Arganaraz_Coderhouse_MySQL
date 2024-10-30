@@ -103,7 +103,7 @@ FOREIGN KEY (ID_Factura) REFERENCES Facturas(ID_Factura);
 -- Tabla Factura
 ALTER TABLE Facturas
 ADD ID_Producto INT,
-ADD	ID_Tipo INT,
+ADD ID_Tipo INT,
 ADD ID_Dis INT,
 ADD constraint FK_Facturas_Producto
 FOREIGN KEY (ID_Producto) REFERENCES Producto(ID_Producto),
