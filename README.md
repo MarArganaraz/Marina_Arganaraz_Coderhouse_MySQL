@@ -1,1 +1,0 @@
-# Proyecto_MySQL_PrimeraEntrega
