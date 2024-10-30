@@ -25,6 +25,10 @@ El análisis está dirigido principalmente a:
 
 ![DER](DER_Merx_Lucidchart.PNG)
 
+# _Diagrama Entidad Relacion MySQL_
+
+![DER_SQL](DER_Merx_SQL.PNG)
+
 
 # <u>LISTADO DE TABLAS</u>
 
