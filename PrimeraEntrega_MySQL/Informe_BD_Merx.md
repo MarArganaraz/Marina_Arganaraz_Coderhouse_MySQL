@@ -23,4 +23,4 @@ El análisis está dirigido principalmente a:
 
 # _Diagrama Entidad Relacion Lucidchart_
 
-![DER](DER_Merx_Lucidchart.png)
+![DER](DER_Merx_Lucidchart.PNG)
