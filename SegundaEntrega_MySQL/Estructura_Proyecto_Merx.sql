@@ -30,8 +30,6 @@ CREATE TABLE Producto (
 ID_Producto INT NOT NULL AUTO_INCREMENT,
 Producto VARCHAR(255),
 Producto_Completo VARCHAR (255),
-Etiqueta VARCHAR(100),
-Precio DECIMAL(10,2),
 Costo DECIMAL(10,2),
 primary key (ID_Producto)
 );
@@ -73,12 +71,12 @@ primary key (ID_Factura)
 );
 
 -- FK
--- Tabla Categoria
-ALTER TABLE Categoria
-ADD ID_Sub INT,
-ADD CONSTRAINT FK_Categoria_Subcategoria
-FOREIGN KEY (ID_Sub) REFERENCES Subcategoria(ID_Sub);
-	
+-- Tabla SubCategoria
+ALTER TABLE SubCategoria
+ADD ID_Categoria INT,
+ADD CONSTRAINT FK_Subcategoria_Categoria
+FOREIGN KEY (ID_Categoria) REFERENCES Categoria(ID_Categoria);
+
 -- Tabla Productos
 ALTER TABLE Producto
 ADD ID_Categoria INT,
@@ -111,3 +109,8 @@ ADD constraint FK_Facturas_Tipo
 FOREIGN KEY (ID_Tipo) REFERENCES TipoCompra(ID_Tipo),
 ADD constraint FK_Facturas_Dispositivo
 FOREIGN KEY (ID_Dis) REFERENCES Dispositivo(ID_Dis);
+
+-- Corrección sobre lo sugerido en la primera entrega
+
+ALTER TABLE merx.ventas
+ADD COLUMN Precio DECIMAL(10, 2);
