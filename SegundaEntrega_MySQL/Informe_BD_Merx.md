@@ -407,3 +407,54 @@ Cálculo de Cantidad total vendida: Se calcula la cantidad total vendida X produ
 ##
 
 *Script de creacion de vistas*: 'vistasSegundaEntrega.sql'
+
+---
+# <u>Triggers</u>
+
+Se crearon 2 triggers, ambos en la tabla "Ventas":
+- *trg_actualizar_inventario*: Disminuye el inventario de un producto cada vez que se realice una venta.
+- *trg_alerta_venta_sospechosa*: Detecta cantidades inusualmente altas de ventas de un producto y las registra en una tabla creada con este objetivo.
+
+## trg_alerta_venta_sospechosa
+- *Objetivo*
+  
+Revisar cada una de las ventas registradas, y de tener una cantidad inusual de venta de un producto, registrara la alerta para, de ser necesario, poder realizar una auditoria.
+
+- *Ventajas*
+  
+Detecta ventas potencialmente erróneas o sospechosas y crea un mecanismo de control adicional para auditorías. 
+
+- *Funcionamiento*
+  
+1. Obtiene el nombre del producto y calcula el monto total de la venta.
+2. Evalúa si la cantidad supera lo usual (se determinaron 10 unidades).
+3. Registra una alerta en la tabla "AlertasVentas" si la cantidad es sospechosamente alta.
+
+- *Tablas utilizadas*
+
+1. AlertasVentas
+2. Ventas
+3. Producto
+   
+## trg_actualizar_inventario
+- *Objetivo*
+  
+Disminuye el inventario de un producto cada vez que se realice una venta, segun cantidad vendida.
+
+- *Ventajas*
+  
+Proporciona coherencia en el control de inventario de los productos existentes. 
+
+- *Funcionamiento*
+  
+Luego de registrada la venta, resta la cantidad vendida del producto requerido sobre la cantidad de stock existente en la columna "Inventario" de la tabla Producto (Esta ultima columna fue añadida para tanto la mejora de la base de datos como para la correcta implementacion del Trigger)
+
+- *Tablas utilizadas*
+
+1. Producto
+2. Ventas
+
+##
+
+*Script de creacion de Triggers*: 'vistasSegundaEntrega.sql'
+
