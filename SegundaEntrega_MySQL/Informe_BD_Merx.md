@@ -458,3 +458,57 @@ Luego de registrada la venta, resta la cantidad vendida del producto requerido s
 
 *Script de creacion de Triggers*: 'triggersSegundaEntrega.sql'
 
+---
+
+# <u>Funciones</u>
+
+Se crearon 2 funciones:
+- *ContarVentasPorFecha*: Esta funcion recibe el "ID_Producto" y devuelve el monto total de las ventas generadas por ese producto.
+- *CalcularMontoTotalPorProducto*: Esta funcion recibe un rango de fechas y devuelve el total de ventas en ese rango.
+
+## CalcularMontoTotalPorProducto
+- *Objetivo*
+  
+Obtener las ventas totales de un producto especifico.
+
+- *Ventajas*
+  
+La precisa informacion de total de ventas de un producto de forma rapida y certera 
+
+- *Funcionamiento*
+  
+1. Recibe el "ID_Producto" como entrada.
+2. Suma el producto de (Cantidad * Precio) de todas las ventas de ese producto.
+3. Devuelve como salida el resultado de la suma, obteniendo el valor "0" si el producto no tuvo ventas
+Ejemplo: <SELECT CalcularMontoTotalPorProducto(1) AS Monto_Total;>
+
+- *Tablas utilizadas*
+
+1. Producto
+2. Ventas
+
+## ContarVentasPorFecha
+- *Objetivo*
+  
+Obtener las ventas totales en un rango de fechas determinado
+
+- *Ventajas*
+  
+Rapida recoleccion de informacion de Ventas totales en un periodo deseado para, de ser necesario, poder ser comparado, por ejemplo, mismo periodo de otro año.
+
+- *Funcionamiento*
+  
+1. Recibe "p_FechaInicio" y "p_FechaFin" como fechas de inicio y fin.
+2. Devuelve el número total de registros de ventas vinculados a facturas dentro del rango especificado. Si no hubo ventas en el rango elegido devolvera "0"
+Ejemplo: <SELECT ContarVentasPorFecha('2024-01-01', '2024-12-31') AS Total_Ventas;>
+
+- *Tablas utilizadas*
+
+1. Ventas
+2. Facturas
+
+##
+
+*Script de creacion de Funciones*: 'functionsSegundaEntrega.sql'
+
+
