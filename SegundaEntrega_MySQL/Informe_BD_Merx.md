@@ -566,5 +566,11 @@ Se evita la carga manual y se disminuyen significativamente las posibilidades de
 1. Ventas
 2. Producto
 
+##
+
+*Script de creacion de Funciones*: 'SPSegundaEntrega.sql'
+
+---
+
 
 
