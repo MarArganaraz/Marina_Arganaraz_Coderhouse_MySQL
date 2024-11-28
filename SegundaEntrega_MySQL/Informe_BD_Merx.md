@@ -388,4 +388,6 @@ Ayudar a confeccionar reportes de Analisis de ventas y Marketing, ademas de mejo
   
 Rapido acceso a la informacion, ademas de gestion mas eficiente y eficaz del inventario de productos.
 
+--
+
 *Script de creacion de vistas*: 'vistasSegundaEntrega.sql'
