@@ -363,4 +363,23 @@ A continuación, se hará mención de las columnas que posee cada tabla junto co
 Con el fin de continuar con el proceso de aprendisaje y corresponder a la segunda entrega del curso de SQL, se avanzo con la insercion de datos en la Base de datos creada en la anterior entrega, para validar el correcto funcionamiento tanto de las relaciones entre las tablas, la creacion de Vistas, Triggers, Funciones y Store Procedures. 
 Para no hacer de este documento algo muy extenso se pueden consultar los distintos INSERT en el archivo "insertSegundaEntrega.sql" en la carpeta "SegundaEntrega_MySQL".
 
+---
+# <u>Vistas</u>
 
+Se crearon 2 vistas:
+- *vw_detalle_ventas*: Analisis detallado de cada venta tomando los datos mas importantes de cada tabla y asi tener una vision mas segmentada sin necesidad de tener que pasar por cada una de ellas para relevarlo
+- *vw_productos_mas_vendidos*: Lista de productos mas vendidos ordenados de mayor a menor, con el total de ventas especifico.
+
+## vw_detalle_ventas
+'Objetivo'
+Obtener un informe mas detallado sobre Ventas en Gral, Analisis de tendencias y que esto ayude en tomas de decisiones mas acertadas.
+'Ventajas'
+Lo principal es conseguir la informacion necesaria para obtener lo mencionado anteriormente sin la necesidad de generar consultas que impliquen tablas multiples.
+
+## vw_productos_mas_vendidos
+'Objetivo'
+Ayudar a confeccionar reportes de Analisis de ventas y Marketing, ademas de mejorar las tomas de decisiones sobre promociones a lanzar, y un pilar importante para la gestion de Stock.
+'Ventaja'
+Rapido acceso a la informacion, ademas de gestion mas eficiente y eficaz del inventario de productos.
+
+*Script de creacion de vistas*: 'vistasSegundaEntrega.sql'
