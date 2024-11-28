@@ -379,6 +379,14 @@ Obtener un informe mas detallado sobre Ventas en Gral, Analisis de tendencias y 
   
 Lo principal es conseguir la informacion necesaria para obtener lo mencionado anteriormente sin la necesidad de generar consultas que impliquen tablas multiples.
 
+- *Creacion y tablas que la componen*
+  
+Uniones: Utilizamos INNER JOIN para relacionar las tablas "Facturas", "Ventas", "Producto", "Categoria", "Marca" y "Metodopago" basadas en las claves foráneas correspondientes.
+
+Campos seleccionados: Se seleccionan los campos relevantes de cada tabla para obtener la información detallada de cada venta (Fecha, Hora, Producto, Categoria, Nombre_Marca, Cantidad, Precio y Metodo_Pago).
+
+Cálculo del monto total: Se calcula el monto total de cada venta multiplicando la cantidad por el precio unitario ({Cantidad * Precio} y se muestra como "Monto_Total").
+
 ## vw_productos_mas_vendidos
 - *Objetivo*
   
@@ -387,6 +395,14 @@ Ayudar a confeccionar reportes de Analisis de ventas y Marketing, ademas de mejo
 - *Ventaja*
   
 Rapido acceso a la informacion, ademas de gestion mas eficiente y eficaz del inventario de productos.
+
+- *Creacion y tablas que la componen*
+  
+Uniones: Se realiza un JOIN entre las tablas "Ventas" y "Producto" utilizando "ID_Producto" como clave
+
+Campos seleccionados: Se selecciona el campo producto de la tabla "Producto"
+
+Cálculo de Cantidad total vendida: Se calcula la cantidad total vendida X productos sumando la cantidad vendida de cada uno de la tabla "Ventas" ({sum(cantidad)} y se muestra como "Total_Cantidad_Vendida"). Ademas se agrupa por ID_Producto y se ordena de forma descendiente por cantidad vendida.
 
 ##
 
