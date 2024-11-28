@@ -456,5 +456,5 @@ Luego de registrada la venta, resta la cantidad vendida del producto requerido s
 
 ##
 
-*Script de creacion de Triggers*: 'vistasSegundaEntrega.sql'
+*Script de creacion de Triggers*: 'triggersSegundaEntrega.sql'
 
