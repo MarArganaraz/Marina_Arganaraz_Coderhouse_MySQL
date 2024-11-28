@@ -356,6 +356,8 @@ A continuación, se hará mención de las columnas que posee cada tabla junto co
 </table>
 
 
+
+
 # <u>INSERCION DE DATOS</u>
 
 Con el fin de continuar con el proceso de aprendisaje y corresponder a la segunda entrega del curso de SQL, se avanzo con la insercion de datos en la Base de datos creada en la anterior entrega, para validar el correcto funcionamiento tanto de las relaciones entre las tablas, la creacion de Vistas, Triggers, Funciones y Store Procedures. 
