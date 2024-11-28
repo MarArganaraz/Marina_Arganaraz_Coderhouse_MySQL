@@ -480,7 +480,7 @@ La precisa informacion de total de ventas de un producto de forma rapida y certe
 1. Recibe el "ID_Producto" como entrada.
 2. Suma el producto de (Cantidad * Precio) de todas las ventas de ese producto.
 3. Devuelve como salida el resultado de la suma, obteniendo el valor "0" si el producto no tuvo ventas
-- Ejemplo: <SELECT CalcularMontoTotalPorProducto(1) AS Monto_Total;>
+✔ Ejemplo: <SELECT CalcularMontoTotalPorProducto(1) AS Monto_Total;>
 
 - *Tablas utilizadas*
 
@@ -500,7 +500,7 @@ Rapida recoleccion de informacion de Ventas totales en un periodo deseado para, 
   
 1. Recibe "p_FechaInicio" y "p_FechaFin" como fechas de inicio y fin.
 2. Devuelve el número total de registros de ventas vinculados a facturas dentro del rango especificado. Si no hubo ventas en el rango elegido devolvera "0"
-- Ejemplo: <SELECT ContarVentasPorFecha('2024-01-01', '2024-12-31') AS Total_Ventas;>
+✔ Ejemplo: <SELECT ContarVentasPorFecha('2024-01-01', '2024-12-31') AS Total_Ventas;>
 
 - *Tablas utilizadas*
 
