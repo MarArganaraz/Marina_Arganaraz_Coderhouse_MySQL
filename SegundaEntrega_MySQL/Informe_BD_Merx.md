@@ -356,7 +356,7 @@ A continuación, se hará mención de las columnas que posee cada tabla junto co
 </table>
 
 
-
+---
 
 # <u>INSERCION DE DATOS</u>
 
