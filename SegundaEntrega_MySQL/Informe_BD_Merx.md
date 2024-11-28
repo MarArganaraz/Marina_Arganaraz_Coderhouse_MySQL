@@ -512,3 +512,59 @@ Rapida recoleccion de informacion de Ventas totales en un periodo deseado para, 
 *Script de creacion de Funciones*: 'functionsSegundaEntrega.sql'
 
 
+---
+
+# <u>Store Procedure</u>
+
+Se crearon 2 SP:
+- *ConsultarVentasPorCategoria*: Este store procedure devuelve las ventas agrupadas por categoría en un rango de fechas.
+- *ActualizarPrecioProducto*: Este store procedure actualizará el precio de un producto segun porcentaje en función de su ID, la actualizacion puede hacerse en el aumento como en el descuento.
+
+## ConsultarVentasPorCategoria
+- *Objetivo*
+  
+Obtener las ventas totales agrupadas por categoria en un rango de fechas determinado.
+
+- *Ventajas*
+  
+Proporciona una visión clara de las ventas por categoría en un período específico.
+
+- *Funcionamiento*
+  
+1. Agrupa las ventas por categoría.
+2. Filtra las ventas según el rango de fechas proporcionado.
+3. Calcula el monto total vendido y la cantidad total vendida por categoría.
+- ✔ Ejemplo: <CALL ConsultarVentasPorCategoria('2024-01-01', '2024-12-31');>
+
+- *Tablas utilizadas*
+
+1. Categoria
+2. Ventas
+3. Producto
+4. Facturas
+
+## ActualizarPrecioProducto
+- *Objetivo*
+  
+Agilizar y disminuir errores en la actualizacion de precios de los productos.
+
+- *Ventajas*
+  
+Se evita la carga manual y se disminuyen significativamente las posibilidades de cometer errores en la actualizacion de precios de los productos a vender.
+
+- *Funcionamiento*
+  
+1. Se ingresa el "ID_Producto" y el porcentaje a actualizar del mismo. (Para descuentos el porcentaje debe ser un numero negativo)
+2. Se consulta el precio actual del producto
+3. Se calcula el nuevo precio aplicando el ajuste en porcentaje al precio actual.
+4. Se realiza la actualización del precio en la tabla "Producto" usando el "UPDATE".
+- ✔ Ejemplo Aumento: <CALL ActualizarPrecioProducto(1, 10);>
+- ✔ Ejemplo Descuento: <CALL ActualizarPrecioProducto(2, -5);>
+
+- *Tablas utilizadas*
+
+1. Ventas
+2. Producto
+
+
+
