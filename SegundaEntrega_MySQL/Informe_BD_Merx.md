@@ -361,8 +361,9 @@ A continuación, se hará mención de las columnas que posee cada tabla junto co
 Con el fin de continuar con el proceso de aprendisaje y corresponder a la segunda entrega del curso de SQL, se avanzon con la insercion de datos en la Base de datos creada en la anterior entrega, para validar el correcto funcionamiento tanto de las relaciones entre las tablas y la creacion de Vistas, Triggers, Funciones y Store Procedures. 
 
 ### _INSERT en tabla "Categoria"_
-INSERT INTO merx.categoria (Categoria, Abreviatura)
-VALUES
+
+INSERT INTO merx.categoria (Categoria, Abreviatura) VALUES
+
     ('Frutas y Verduras', 'FYV'),
     ('Carnes', 'CAR'),
     ('Lácteos', 'LAC'),
@@ -375,6 +376,7 @@ VALUES
     ('Mascotas', 'MAS');
 
 ### _INSERT en tabla "Subcategoria"_
+
 INSERT INTO Subcategoria (Subcategoria, Id_Categoria) VALUES
 
     ('Frutas Cítricas',1),
