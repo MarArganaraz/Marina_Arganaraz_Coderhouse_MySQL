@@ -371,17 +371,21 @@ Se crearon 2 vistas:
 - *vw_productos_mas_vendidos*: Lista de productos mas vendidos ordenados de mayor a menor, con el total de ventas especifico.
 
 ## vw_detalle_ventas
-- '*Objetivo*'
+- *Objetivo*
+  
 Obtener un informe mas detallado sobre Ventas en Gral, Analisis de tendencias y que esto ayude en tomas de decisiones mas acertadas.
 
-- '*Ventajas*'
+- *Ventajas*
+  
 Lo principal es conseguir la informacion necesaria para obtener lo mencionado anteriormente sin la necesidad de generar consultas que impliquen tablas multiples.
 
 ## vw_productos_mas_vendidos
-- '*Objetivo*'
+- *Objetivo*
+  
 Ayudar a confeccionar reportes de Analisis de ventas y Marketing, ademas de mejorar las tomas de decisiones sobre promociones a lanzar, y un pilar importante para la gestion de Stock.
 
-- '*Ventaja*'
+- *Ventaja*
+  
 Rapido acceso a la informacion, ademas de gestion mas eficiente y eficaz del inventario de productos.
 --
 *Script de creacion de vistas*: 'vistasSegundaEntrega.sql'
