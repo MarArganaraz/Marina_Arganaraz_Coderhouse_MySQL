@@ -376,6 +376,7 @@ VALUES
 
 ### _INSERT en tabla "Subcategoria"_
 INSERT INTO Subcategoria (Subcategoria, Id_Categoria) VALUES
+
     ('Frutas Cítricas',1),
     ('Verduras de Hoja',1),
     ('Carnes Rojas',2),
