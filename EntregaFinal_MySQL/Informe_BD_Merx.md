@@ -23,7 +23,7 @@ El análisis está dirigido principalmente a:
 
 # _Diagrama Entidad Relacion MySQL_
 
-![DER_SQL](DER_SuperMerx_SQL.PNG)
+![DER_SQL](DER_SuperMerx_SQL.png)
 
 
 # <u>LISTADO DE TABLAS</u>
